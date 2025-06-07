@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Inicio de Sitio Web</a>
+      <a href="{{ '/Contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/about' | relative_url }}">About</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+
+  <footer>
+    <hr>
+    <p>© {{ site.title }} - {{ site.description }}</p>
+  </footer>
+</body>
+</html>
